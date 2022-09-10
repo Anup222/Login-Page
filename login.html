@@ -84,24 +84,50 @@
 
                                         <!-- Begining of Captcha -->
 
-                                        <div class="flex flex-wrap w-full content-center">
-                                            <div id="captchaBackground" >
-                                                <canvas id="captcha" class="bg-white mb-4 rounded block" style="width: 15rem; height: 6rem;">captcha text</canvas>
-                                                <div class="flex justify-center ">
-                                                    <div>
-                                                        <input type="text" id="textBox"
-                                                            class="form-control block w-full px-3 py-2 lg:py-3 mt-2.5 text-base font-normal rounded-3xl text-black bg-gray-400 bg-clip-padding transition ease-in-out m-0 focus:text-gray-800 focus:bg-white focus:outline-none placeholder-black"
-                                                            id="exampleFormControlInput1"
-                                                            placeholder="Enter the code shown above" />
-                                                    </div>
-                                                    <div>
-                                                        <button id="refreshButton"><i class="material-icons" style="font-size:48px;color:red">autorenew</i></button>
-                                                    </div>
+                                        <div class="flex justify-center">
+                                            <div id="captchaBackground">
+                                              <canvas
+                                                id="captcha"
+                                                class="bg-white rounded block my-6"
+                                                style="
+                                                  width: 17rem;
+                                                  height: 6rem;
+                                                  background-color: #e5e5f7;
+                                                  opacity: 0.8;
+                                                  background-image: radial-gradient(
+                                                      #444cf7 0.5px,
+                                                      transparent 0.5px
+                                                    ),
+                                                    radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+                                                  background-size: 20px 20px;
+                                                  background-position: 0 0, 10px 10px;
+                                                "
+                                                >captcha text</canvas
+                                              >
+                                              <div class="flex justify-center">
+                                                <div>
+                                                  <input
+                                                    type="text"
+                                                    id="textBox"
+                                                    class="form-control block w-full px-3 lg:py-3 text-base font-normal rounded-3xl text-black bg-gray-400 bg-clip-padding transition ease-in-out m-0 focus:text-gray-800 focus:bg-white focus:outline-none placeholder-black"
+                                                    id="exampleFormControlInput1"
+                                                    placeholder="Enter Captcha"
+                                                  />
                                                 </div>
+                                                <div>
+                                                  <button id="refreshButton">
+                                                    <i
+                                                      class="material-icons px-2"
+                                                      style="font-size: 48px; color: red"
+                                                      >autorenew</i
+                                                    >
+                                                  </button>
+                                                </div>
+                                              </div>
 
-                                                <span id="output"></span>
+                                              <span id="output"></span>
                                             </div>
-                                        </div>
+                                          </div>
 
                                         <!-- Begining of Captcha -->
 
