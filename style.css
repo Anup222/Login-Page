@@ -5,3 +5,36 @@
 .correctCaptcha {
     color: #7FFF00;
 }
+
+#captcha {
+    width: 17rem;
+    height: 6rem;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+}
+
+#submitButton {
+    background: rgb(210, 0, 85);
+    background: linear-gradient(146deg,
+            rgba(210, 0, 85, 1) 0%,
+            rgba(231, 128, 0, 1) 57%,
+            rgba(193, 0, 0, 1) 100%);
+}
+
+.icon-bg {
+    background: linear-gradient(to right,
+            #ee7724,
+            #d8363a,
+            #dd3675,
+            #b44593);
+}
+
+@media only screen and (max-width: 475px) {
+    #captcha {
+        width: 12rem;
+        height: 4rem;
+    }
+}
