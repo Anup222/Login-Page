@@ -45,4 +45,8 @@ section {
         width: 12rem;
         height: 4rem;
     }
+
+    #refreshButton {
+        font-size: small;
+    }
 }
