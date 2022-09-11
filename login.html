@@ -1,221 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Login</title>
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome CDN Link for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <style>
-        html,
-        body,
-        section {
-            min-height: 100vh;
-            background-image: url("https://source.unsplash.com/rW8xWdImzWw");
-            background-size: cover;
-        }
+      html,
+      body,
+      section {
+        min-height: 100vh;
+        background-image: url("https://source.unsplash.com/rW8xWdImzWw");
+        background-size: cover;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="h-full gradient-form md:h-screen">
-        <div class="container py-12 lg:py-0 px-6 mx-auto h-full">
-            <div class="flex justify-center items-center flex-wrap h-full g-6 backdrop-blur-sm bg-white/30">
-                <div class="w-11/12 md:w-10/12 lg:w-8/12 xl:w-7/12 rounded-2xl" style="
+      <div class="container py-12 lg:py-0 px-6 mx-auto h-full">
+        <div
+          class="flex justify-center items-center flex-wrap h-full g-6 backdrop-blur-sm bg-white/30"
+        >
+          <div
+            class="w-11/12 md:w-10/12 lg:w-8/12 xl:w-7/12 rounded-2xl"
+            style="
               background-color: rgba(255, 255, 255, 0.253);
               -webkit-backdrop-filter: blur(1px);
               backdrop-filter: blur(1px);
-            ">
-                    <div class="block shadow-2xl rounded-lg">
-                        <div class="lg:flex lg:flex-wrap g-0">
-                            <div class="lg:w-full px-20 pb-8">
-                                <div class="md:p-12 md:mx-6">
-                                    <div class="text-center">
-                                        <!-- <img class="mx-auto w-48"
+            "
+          >
+            <div class="block shadow-2xl rounded-lg">
+              <div class="lg:flex lg:flex-wrap g-0">
+                <div class="lg:w-full px-20 pb-8">
+                  <div class="md:p-12 md:mx-6">
+                    <div class="text-center">
+                      <!-- <img class="mx-auto w-48"
                                             src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
                                             alt="logo" /> -->
-                                        <h4 class="text-3xl font-semibold mt-1 mb-12 pb-1">
-                                            ADMIN PANEL
-                                        </h4>
-                                    </div>
-                                    <form>
-                                        <div class="mb-6">
-                                            <label class="px-3 text-xl lg:text-2xl font-semibold"
-                                                for="">Username</label>
-
-                                            <div class="flex">
-                                                <i
-                                                    class="rounded-l-3xl fas fa-user-alt my-auto px-3 py-3 lg:py-4 bg-gray-400 bg-clip-padding transition ease-in-out focus:text-gray-800 focus:bg-white focus:outline-none" style="
-                                                    background: linear-gradient(
-                                                      to right,
-                                                      #ee7724,
-                                                      #d8363a,
-                                                      #dd3675,
-                                                      #b44593
-                                                    );"></i>
-
-                                                <input type="text"
-                                                    class="form-control block w-full px-3 py-2 lg:py-3 mt-2.5 text-base font-normal rounded-r-3xl text-black bg-gray-400 bg-clip-padding transition ease-in-out m-0 focus:text-gray-800 focus:bg-white focus:outline-none placeholder-black"
-                                                    id="exampleFormControlInput1" placeholder=" Username" />
-                                            </div>
-                                        </div>
-                                        <div class="mb-4">
-                                            <label class="px-3 text-xl lg:text-2xl font-semibold"
-                                                for="">Password</label>
-                                            <div class="flex">
-                                                <i
-                                                    class="rounded-l-3xl fas fas fa-lock my-auto px-3 py-3 lg:py-4 bg-gray-400 bg-clip-padding transition ease-in-out focus:text-gray-800 focus:bg-white focus:outline-none" style="
-                                                    background: linear-gradient(
-                                                      to right,
-                                                      #ee7724,
-                                                      #d8363a,
-                                                      #dd3675,
-                                                      #b44593
-                                                    );" ></i>
-                                                <input type="password"
-                                                    class="form-control block w-full px-3 py-2 lg:py-3 mt-2.5 text-base font-normal rounded-r-3xl text-black bg-gray-400 bg-clip-padding transition ease-in-out m-0 focus:text-gray-800 focus:bg-white focus:outline-none placeholder-black"
-                                                    id="exampleFormControlInput1" placeholder="Password" />
-                                            </div>
-                                        </div>
-
-                                        <!-- Begining of Captcha -->
-
-                                        <div class="flex justify-center">
-                                            <div id="captchaBackground">
-                                              <canvas
-                                                id="captcha"
-                                                class="bg-white rounded block my-6"
-                                                style="
-                                                  width: 17rem;
-                                                  height: 6rem;
-                                                  background-color: #e5e5f7;
-                                                  opacity: 0.8;
-                                                  background-image: radial-gradient(
-                                                      #444cf7 0.5px,
-                                                      transparent 0.5px
-                                                    ),
-                                                    radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-                                                  background-size: 20px 20px;
-                                                  background-position: 0 0, 10px 10px;
-                                                "
-                                                >captcha text</canvas
-                                              >
-                                              <div class="flex justify-center">
-                                                <div>
-                                                  <input
-                                                    type="text"
-                                                    id="textBox"
-                                                    class="form-control block w-full px-3 lg:py-3 text-base font-normal rounded-3xl text-black bg-gray-400 bg-clip-padding transition ease-in-out m-0 focus:text-gray-800 focus:bg-white focus:outline-none placeholder-black"
-                                                    id="exampleFormControlInput1"
-                                                    placeholder="Enter Captcha"
-                                                  />
-                                                </div>
-                                                <div>
-                                                  <button id="refreshButton">
-                                                    <i
-                                                      class="material-icons px-2"
-                                                      style="font-size: 48px; color: red"
-                                                      >autorenew</i
-                                                    >
-                                                  </button>
-                                                </div>
-                                              </div>
-
-                                              <span id="output"></span>
-                                            </div>
-                                          </div>
-
-                                        <!-- Begining of Captcha -->
-
-                                        <div class="text-center pt-1 mb-12 pb-1">
-                                            <button id="submitButton"
-                                                class="inline-block px-6 py-3 mt-12 text-white font-medium font-bold text-base leading-tight uppercase rounded-3xl shadow-md hover:bg-blue-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3"
-                                                type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
-                                                style="
-                            background: rgb(210,0,85);
-background: linear-gradient(146deg, rgba(210,0,85,1) 0%, rgba(231,128,0,1) 57%, rgba(193,0,0,1) 100%);
-                          ">
-                                                Log in
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                      <h4 class="text-3xl font-semibold mt-1 mb-12 pb-1">
+                        ADMIN PANEL
+                      </h4>
                     </div>
+                    <form>
+                      <div class="mb-6">
+                        <label
+                          class="px-3 text-xl lg:text-2xl font-semibold"
+                          for=""
+                          >Username</label
+                        >
+
+                        <div class="flex">
+                          <i
+                            class="rounded-l-3xl fas fa-user-alt my-auto px-3 py-3 lg:py-4 bg-gray-400 bg-clip-padding transition ease-in-out focus:text-gray-800 focus:bg-white focus:outline-none"
+                            style="
+                              background: linear-gradient(
+                                to right,
+                                #ee7724,
+                                #d8363a,
+                                #dd3675,
+                                #b44593
+                              );
+                            "
+                          ></i>
+
+                          <input
+                            type="text"
+                            class="form-control block w-full px-3 py-2 lg:py-3 mt-2.5 text-base font-normal rounded-r-3xl text-black bg-gray-400 bg-clip-padding transition ease-in-out m-0 focus:text-gray-800 focus:bg-white focus:outline-none placeholder-black"
+                            id="exampleFormControlInput1"
+                            placeholder=" Username"
+                          />
+                        </div>
+                      </div>
+                      <div class="mb-4">
+                        <label
+                          class="px-3 text-xl lg:text-2xl font-semibold"
+                          for=""
+                          >Password</label
+                        >
+                        <div class="flex">
+                          <i
+                            class="rounded-l-3xl fas fas fa-lock my-auto px-3 py-3 lg:py-4 bg-gray-400 bg-clip-padding transition ease-in-out focus:text-gray-800 focus:bg-white focus:outline-none"
+                            style="
+                              background: linear-gradient(
+                                to right,
+                                #ee7724,
+                                #d8363a,
+                                #dd3675,
+                                #b44593
+                              );
+                            "
+                          ></i>
+                          <input
+                            type="password"
+                            class="form-control block w-full px-3 py-2 lg:py-3 mt-2.5 text-base font-normal rounded-r-3xl text-black bg-gray-400 bg-clip-padding transition ease-in-out m-0 focus:text-gray-800 focus:bg-white focus:outline-none placeholder-black"
+                            id="exampleFormControlInput1"
+                            placeholder="Password"
+                          />
+                        </div>
+                      </div>
+
+                      <!-- Begining of Captcha -->
+
+                      <div class="flex justify-center">
+                        <div id="captchaBackground">
+                          <canvas
+                            id="captcha"
+                            class="bg-white rounded block my-6"
+                            style="
+                              width: 17rem;
+                              height: 6rem;
+                              background-color: #e5e5f7;
+                              opacity: 0.8;
+                              background-image: radial-gradient(
+                                  #444cf7 0.5px,
+                                  transparent 0.5px
+                                ),
+                                radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+                              background-size: 20px 20px;
+                              background-position: 0 0, 10px 10px;
+                            "
+                            >captcha text</canvas
+                          >
+                          <div class="flex justify-center">
+                            <div>
+                              <input
+                                type="text"
+                                id="textBox"
+                                class="form-control font-bold block w-full px-3 lg:py-3 text-base font-normal rounded-3xl text-black bg-gray-400 bg-clip-padding transition ease-in-out m-0 focus:text-gray-800 focus:bg-white focus:outline-none placeholder-black"
+                                id="exampleFormControlInput1"
+                                placeholder="Enter Captcha"
+                              />
+                            </div>
+                            <div>
+                              <button id="refreshButton">
+                                <i
+                                  class="material-icons px-2"
+                                  style="font-size: 48px; color: red"
+                                  >autorenew</i
+                                >
+                              </button>
+                            </div>
+                          </div>
+
+                          <span
+                            class="text-red-500 font-bold text-xl"
+                            id="output"
+                          ></span>
+                        </div>
+                      </div>
+
+                      <!--Endining of Captcha -->
+
+                      <div class="text-center pt-1 mb-12 pb-1">
+                        <button
+                          id="submitButton"
+                          class="inline-block px-6 py-3 mt-12 text-white font-medium font-bold text-base leading-tight uppercase rounded-3xl shadow-md hover:bg-blue-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3"
+                          type="button"
+                          data-mdb-ripple="true"
+                          data-mdb-ripple-color="light"
+                          style="
+                            background: rgb(210, 0, 85);
+                            background: linear-gradient(
+                              146deg,
+                              rgba(210, 0, 85, 1) 0%,
+                              rgba(231, 128, 0, 1) 57%,
+                              rgba(193, 0, 0, 1) 100%
+                            );
+                          "
+                        >
+                          Log in
+                        </button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-
-    <script>
-        let captchaText = document.querySelector('#captcha');
-        var ctx = captchaText.getContext("2d");
-        ctx.font = "30px Roboto";
-        ctx.fillStyle = "#08e5ff";
-
-        let userText = document.querySelector('#textBox');
-        let submitButton = document.querySelector('#submitButton');
-        let output = document.querySelector('#output');
-        let refreshButton = document.querySelector('#refreshButton');
-
-        // alphaNums contains the characters with which you want to create the CAPTCHA
-        let alphaNums = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-        let emptyArr = [];
-        // This loop generates a random string of 7 characters using alphaNums
-        // Further this string is displayed as a CAPTCHA
-        for (let i = 1; i <= 7; i++) {
-            emptyArr.push(alphaNums[Math.floor(Math.random() * alphaNums.length)]);
-        }
-        var c = emptyArr.join('');
-        ctx.fillText(emptyArr.join(''), captchaText.width / 4, captchaText.height / 2);
-
-        // This event listener is stimulated whenever the user press the "Enter" button
-        // "Correct!" or "Incorrect, please try again" message is
-        // displayed after validating the input text with CAPTCHA
-        userText.addEventListener('keyup', function (e) {
-            // Key Code Value of "Enter" Button is 13
-            if (e.keyCode === 13) {
-                if (userText.value === c) {
-                    output.classList.add("correctCaptcha");
-                    output.innerHTML = "Correct!";
-                } else {
-                    output.classList.add("incorrectCaptcha");
-                    output.innerHTML = "Incorrect, please try again";
-                }
-            }
-        });
-        // This event listener is stimulated whenever the user clicks the "Submit" button
-        // "Correct!" or "Incorrect, please try again" message is
-        // displayed after validating the input text with CAPTCHA
-        submitButton.addEventListener('click', function () {
-            if (userText.value === c) {
-                output.classList.add("correctCaptcha");
-                output.innerHTML = "Correct!";
-            } else {
-                output.classList.add("incorrectCaptcha");
-                output.innerHTML = "Incorrect, please try again";
-            }
-        });
-        // This event listener is stimulated whenever the user press the "Refresh" button
-        // A new random CAPTCHA is generated and displayed after the user clicks the "Refresh" button
-        refreshButton.addEventListener('click', function () {
-            userText.value = "";
-            let refreshArr = [];
-            for (let j = 1; j <= 7; j++) {
-                refreshArr.push(alphaNums[Math.floor(Math.random() * alphaNums.length)]);
-            }
-            ctx.clearRect(0, 0, captchaText.width, captchaText.height);
-            c = refreshArr.join('');
-            ctx.fillText(refreshArr.join(''), captchaText.width / 4, captchaText.height / 2);
-            output.innerHTML = "";
-        });
-    </script>
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
