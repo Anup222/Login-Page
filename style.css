@@ -1,3 +1,11 @@
+html,
+body,
+section {
+    min-height: 100vh;
+    background-color: #c4c4c4;
+    background-size: cover;
+}
+
 .incorrectCaptcha {
     color: #FF0000;
 }
