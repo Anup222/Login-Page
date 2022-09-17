@@ -112,6 +112,8 @@ let captchaText = document.querySelector("#captcha");
           output.classList.add("incorrectCaptcha");
           output.innerHTML = "Incorrect!, please try again";
         }
+        
+        
       });
       // This event listener is stimulated whenever the user press the "Refresh" button
       // A new random CAPTCHA is generated and displayed after the user clicks the "Refresh" button
